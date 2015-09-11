@@ -1,4 +1,5 @@
 # not-impressed
+![Not Impressed](not-impressed.png)
 a third party component scanner supporting .NET, maven, nodejs, and ruby builds. 
 
 focused on:
