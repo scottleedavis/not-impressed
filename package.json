@@ -1,0 +1,14 @@
+{
+	"name": "not-impressed",
+	"private": true,
+	"dependencies": {
+		"jsonfile": "~2.2.1",
+		"lodash": "~3.10.1",
+    	"node-internal-pubsub": "1.0.x"
+	},
+	"version": "0.0.1",
+	"scripts": {
+		"start": "node app.js"
+	}
+
+}

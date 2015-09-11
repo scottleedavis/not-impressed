@@ -1,0 +1,6 @@
+[submodule "DependencyCheck"]
+	path = DependencyCheck
+	url = git@github.com:jeremylong/DependencyCheck.git
+[submodule "brakeman"]
+	path = brakeman
+	url = git@github.com:presidentbeef/brakeman.git

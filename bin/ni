@@ -1,0 +1,16 @@
+#!/bin/sh
+
+echo "starting up...  Not Impressed!!!"
+
+export NI_TARGET="$PWD"
+export NI_CONF=".not-impressed.json"
+
+if [[ "$@" == "-d" ]] #debug mode
+then
+    node-debug ./not-impressed/app.js
+else
+    npm --prefix ./not-impressed start
+fi
+
+
+echo "shut down.  Not Impressed!!!"
