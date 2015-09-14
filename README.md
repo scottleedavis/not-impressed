@@ -26,6 +26,7 @@ installation
 usage
 -----
 
+*terminal (/bin/sh)*
 ```
 #from your-repo root
 source ./not-impressed/env.sh
@@ -37,6 +38,13 @@ ni -d
 ni
 
 ```
+
+*jenkins*
+* todo setup
+
+*travis*
+* todo setup
+
 
 todo
 ----
