@@ -1,6 +1,5 @@
 ![Not Impressed](not-impressed.png)
-
-a third party component scanner supporting .NET, maven, nodejs, and ruby builds. 
+an automated multiplatform build runner leveraging [license_finder](https://github.com/pivotal/LicenseFinder) , written in nodejs.
 
 focused on:
 * license information
@@ -10,23 +9,40 @@ focused on:
 dependencies
 ------------
 
-* Ruby >= 1.9.3
-* RubyGems (license_finder)
-* Nodejs >= 0.10.x
-* apache maven 3  (tested with 3.3.3)
+* [LicenseFinder](https://rubygems.org/gems/license_finder/versions/2.0.4)
+* [Nodejs >= 0.10.x](https://nodejs.org)
+
+optional dependencies
+---------------------
+
+* [apache maven 3](https://maven.apache.org/download.cgi)
+* [bundler](http://bundler.io/)
 
 
 installation
 -----
 
 * add a .not-impressed.json file to your repo
-* add not impressed as a submodule to your project (git submodule add git@github.com:scottleedavis/not-impressed.git)
+```
+{
+	"Report": "Your Report Name",
+	"targets": [
+		{"some_folder": "*" },
+		{"some_other_folder": ["subfolder_1","subfolder_2/project"]}
+	],
+	"license_output_file": "license_results.json"
+}
+```
+*git add as a submodule to your project*
+```
+git submodule add git@github.com:scottleedavis/not-impressed.git)
+```
 
 
 usage
 -----
 
-*terminal (/bin/sh)*
+*from terminal (/bin/sh)*
 ```
 #from your-repo root
 source ./not-impressed/env.sh
