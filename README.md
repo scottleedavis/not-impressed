@@ -1,5 +1,7 @@
 ![Not Impressed](not-impressed.png)
 
+[![Build Status](https://travis-ci.org/scottleedavis/not-impressed.svg)](https://travis-ci.org/scottleedavis/not-impressed)
+
 An automated multiplatform build runner leveraging [license_finder](https://github.com/pivotal/LicenseFinder) , written in nodejs.
 
 dependencies
@@ -34,11 +36,6 @@ installation
 git submodule add git@github.com:scottleedavis/not-impressed.git
 ```
 
-testing
--------
-
-
-
 usage
 -----
 
@@ -61,6 +58,18 @@ ni
 *travis*
 * todo setup
 
+testing
+-------
+
+*[nodeunit](https://github.com/caolan/nodeunit) needs to be installed*
+```
+npm install -g nodeunit
+```
+
+*running tests*
+```
+nodeunit test/sanity-check.js
+```
 
 todo
 ----
