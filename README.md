@@ -34,20 +34,6 @@ installation
 git submodule add git@github.com:scottleedavis/not-impressed.git
 ```
 
-testing
--------
-
-*[nodeunit](https://github.com/caolan/nodeunit) needs to be installed*
-```
-npm install -g nodeunit
-```
-
-*running tests*
-```
-nodeunit test/sanity-check.js
-```
-
-
 usage
 -----
 
@@ -70,6 +56,18 @@ ni
 *travis*
 * todo setup
 
+testing
+-------
+
+*[nodeunit](https://github.com/caolan/nodeunit) needs to be installed*
+```
+npm install -g nodeunit
+```
+
+*running tests*
+```
+nodeunit test/sanity-check.js
+```
 
 todo
 ----
