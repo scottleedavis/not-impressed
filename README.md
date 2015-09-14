@@ -1,10 +1,6 @@
 ![Not Impressed](not-impressed.png)
-an automated multiplatform build runner leveraging [license_finder](https://github.com/pivotal/LicenseFinder) , written in nodejs.
 
-focused on:
-* license information
-* (TODO) vulnerability information
-
+An automated multiplatform build runner leveraging [license_finder](https://github.com/pivotal/LicenseFinder) , written in nodejs.
 
 dependencies
 ------------
@@ -65,13 +61,9 @@ ni
 todo
 ----
 
-* license & vuln info for ios
-* gradle license & vuln info for android
-* windows phone license & vuln info
-* extract license info for .NET (a10)
-
-
-notes
------
+* license info for ios
+* license info for android
+* license info for windows phone
+* license info for .NET
 
 
