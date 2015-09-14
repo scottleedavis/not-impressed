@@ -31,7 +31,7 @@ installation
 ```
 *git add as a submodule to your project*
 ```
-git submodule add git@github.com:scottleedavis/not-impressed.git)
+git submodule add git@github.com:scottleedavis/not-impressed.git
 ```
 
 
