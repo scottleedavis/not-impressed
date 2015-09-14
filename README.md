@@ -37,6 +37,15 @@ git submodule add git@github.com:scottleedavis/not-impressed.git
 testing
 -------
 
+*[nodeunit](https://github.com/caolan/nodeunit) needs to be installed*
+```
+npm install -g nodeunit
+```
+
+*running tests*
+```
+node test/sanity-check.js
+```
 
 
 usage
