@@ -49,12 +49,5 @@ todo
 
 notes
 -----
-```
-license finder notes
 
-on each run, make sure you have bundle install, npm install, or mvn install'ed
-
-note... on each run of license_finder on a mvn build...  need a symbolic lync to target/ instead of dist/
-i.e.  ln -s dist target
-```
 
