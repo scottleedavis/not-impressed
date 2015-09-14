@@ -10,16 +10,33 @@ focused on:
 dependencies
 ------------
 
-Ruby >= 1.9.3
-RubyGems (license_finder)
-Nodejs >= 0.10.x
-apache maven 3  (tested with 3.3.3)
+* Ruby >= 1.9.3
+* RubyGems (license_finder)
+* Nodejs >= 0.10.x
+* apache maven 3  (tested with 3.3.3)
+
+
+installation
+-----
+
+* add a .not-impressed.json file to your repo
+* add not impressed as a submodule to your project (git submodule add git@github.com:scottleedavis/not-impressed.git)
 
 
 usage
 -----
 
-*todo*
+```
+#from your-repo root
+source ./not-impressed/env.sh
+
+#for debug mode
+ni -d
+
+#for normal mode
+ni
+
+```
 
 todo
 ----
