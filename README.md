@@ -1,5 +1,7 @@
 ![Not Impressed](not-impressed.png)
 
+[![Build Status](https://travis-ci.org/scottleedavis/not-impressed.svg)](https://travis-ci.org/scottleedavis/not-impressed)
+
 An automated multiplatform build runner leveraging [license_finder](https://github.com/pivotal/LicenseFinder) , written in nodejs.
 
 dependencies
