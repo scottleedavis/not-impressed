@@ -17,10 +17,14 @@ dependencies
 
 
 installation
------
+------------
 
 * add a .not-impressed.json file to your repo
 * add not impressed as a submodule to your project (git submodule add git@github.com:scottleedavis/not-impressed.git)
+
+testing
+-------
+
 
 
 usage
