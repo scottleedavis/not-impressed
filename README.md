@@ -44,7 +44,7 @@ npm install -g nodeunit
 
 *running tests*
 ```
-node test/sanity-check.js
+nodeunit test/sanity-check.js
 ```
 
 
