@@ -4,7 +4,8 @@
 	"dependencies": {
 		"jsonfile": "~2.2.1",
 		"lodash": "~3.10.1",
-    	"node-internal-pubsub": "1.0.x"
+    	"node-internal-pubsub": "1.0.x",
+    	"nodeunit": "~0.9.1"
 	},
 	"version": "0.0.1",
 	"scripts": {
