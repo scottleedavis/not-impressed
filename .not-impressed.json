@@ -1,5 +1,16 @@
 {
     "Report": "Not Impressed",
     "targets": [{".": ["."] }],
-    "license_output_file": "license_results.json"
+    "output": "results.json",
+	"build": {
+		"node": {
+			"pattern": "package.json",
+			"command": "npm install"
+		}
+	},
+	"scan": {
+		"license": {
+			"command": "license_finder"
+		}
+	}
 }

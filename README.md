@@ -2,12 +2,11 @@
 
 [![Build Status](https://travis-ci.org/scottleedavis/not-impressed.svg)](https://travis-ci.org/scottleedavis/not-impressed)
 
-An automated multiplatform build runner leveraging [license_finder](https://github.com/pivotal/LicenseFinder) , written in nodejs.
+A generalized multiplatform build scanner written in nodejs.
 
 dependencies
 ------------
 
-* [LicenseFinder](https://rubygems.org/gems/license_finder/versions/2.0.4)
 * [Nodejs >= 0.10.x](https://nodejs.org)
 
 optional dependencies
@@ -15,6 +14,7 @@ optional dependencies
 
 * [apache maven 3](https://maven.apache.org/download.cgi)
 * [bundler](http://bundler.io/)
+* [license_finder](https://github.com/pivotal/LicenseFinder)
 
 
 installation
@@ -28,7 +28,26 @@ installation
 		{"some_folder": "*" },
 		{"some_other_folder": ["subfolder_1","subfolder_2/project"]}
 	],
-	"license_output_file": "license_results.json"
+	"output: "results.json",
+	"build": {
+		"ruby": {
+			"pattern": "Gemfile",
+			"command": "bundle install --path vendor/bundle"
+		},
+		"maven": {
+			"pattern": "pom.xml",
+			"command": "mvn package; rm -f target; ln -s dist target"
+		},
+		"node": {
+			"pattern": "package.json",
+			"command": "npm install"
+		}
+	},
+	"scan": {
+		"license": {
+			"command": "license_finder"
+		}
+	}
 }
 ```
 *git add as a submodule to your project*
