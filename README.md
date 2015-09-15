@@ -28,7 +28,7 @@ installation
 		{"some_folder": "*" },
 		{"some_other_folder": ["subfolder_1","subfolder_2/project"]}
 	],
-	"output: "results.json",
+	"output": "results.json",
 	"build": {
 		"ruby": {
 			"pattern": "Gemfile",
