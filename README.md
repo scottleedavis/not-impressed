@@ -90,12 +90,4 @@ npm install -g nodeunit
 nodeunit test/sanity-check.js
 ```
 
-todo
-----
-
-* license info for ios
-* license info for android
-* license info for windows phone
-* license info for .NET
-
 
