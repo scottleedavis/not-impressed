@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/scottleedavis/not-impressed.svg)](https://travis-ci.org/scottleedavis/not-impressed)
 
-A generalized multiplatform build scanner written in nodejs.
+A generalized platform build scanner written in nodejs.
 
 dependencies
 ------------
