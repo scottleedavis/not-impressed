@@ -64,7 +64,6 @@ create a *.not-impressed.json* file in your repo that describes how to build and
 }
 ```
 
-```
 *example of multiple targets configuration*
 ```
 {
