@@ -28,7 +28,7 @@ npm install -g not-impressed
 configuration
 -------------
 
-create a *.not-impressed.json* file in your repo that describes how to build and scan things.
+create a *.ni.json* file in your repo that describes how to build and scan things.
 
 *example minimal configuration*
 ```

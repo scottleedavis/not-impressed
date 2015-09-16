@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 process.env['NI_TARGET']=process.cwd();
-process.env['NI_CONF']=".not-impressed.json";
+process.env['NI_CONF']=".ni.json";
 
 var jsonfile = require('jsonfile'),
 	path = require('path'),
