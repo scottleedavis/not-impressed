@@ -1,6 +1,7 @@
 ![Not Impressed](not-impressed.png)
 
 [![Build Status](https://travis-ci.org/scottleedavis/not-impressed.svg)](https://travis-ci.org/scottleedavis/not-impressed)
+[![npm version](https://badge.fury.io/js/not-impressed.svg)](http://badge.fury.io/js/not-impressed)
 
 A generalized platform build scanner written in nodejs.
 
@@ -19,7 +20,6 @@ optional dependencies
 
 installation
 ------------
-[npm](https://www.npmjs.com/) must be installed beforehand.
 ```
 npm install -g not-impressed
 ```
