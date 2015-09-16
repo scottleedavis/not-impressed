@@ -4,12 +4,13 @@ echo "starting up...  Not Impressed!!!"
 
 export NI_TARGET="$PWD"
 export NI_CONF=".not-impressed.json"
+export NI_SELF=true
 
 if [[ "$@" == "-d" ]]
 then
-    node-debug ./not-impressed/app.js
+	node-debug ./app.js
 else
-	npm --prefix ./not-impressed start
+	npm start
 fi
 
 
