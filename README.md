@@ -1,6 +1,8 @@
 ![Not Impressed](not-impressed.png)
 
 [![Build Status](https://travis-ci.org/scottleedavis/not-impressed.svg)](https://travis-ci.org/scottleedavis/not-impressed)
+[![npm version](https://badge.fury.io/js/not-impressed.svg)](http://badge.fury.io/js/not-impressed)
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://www.npmjs.com/package/not-impressed)
 
 A generalized platform build scanner written in nodejs.
 
@@ -19,7 +21,6 @@ optional dependencies
 
 installation
 ------------
-[npm](https://www.npmjs.com/) must be installed beforehand.
 ```
 npm install -g not-impressed
 ```
@@ -66,6 +67,7 @@ cd <your repo>
 ni
 
 ```
+output is then generated in JSON format with the scan results in the current directory.
 
 testing
 -------
@@ -74,7 +76,6 @@ testing
 ```
 npm install -g nodeunit
 ```
-
 *running tests*
 ```
 nodeunit test/default-check.js
