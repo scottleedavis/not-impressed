@@ -9,9 +9,9 @@
     		"node-internal-pubsub": "1.0.x",
     		"nodeunit": "~0.9.1"
 	},
-	"main": "app.js",
+	"main": "ni",
 	"scripts": {
-		"start": "node app.js",
+		"start": "ni",
 		"test": "nodeunit test/default-check.js"
 	},
 	"bin": {
