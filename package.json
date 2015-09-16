@@ -2,6 +2,7 @@
 	"name": "not-impressed",
 	"description": "A generalized platform build scanner.",
 	"version": "0.0.1",
+	"preferGlobal": true,
 	"dependencies": {
 		"jsonfile": "~2.2.1",
 		"lodash": "~3.10.1",
@@ -12,6 +13,9 @@
 	"scripts": {
 		"start": "node app.js",
 		"test": "nodeunit test/sanity-check.js"
+	},
+	"bin": {
+		"ni": "bin/ni"
 	},
 	"repository": {
 		"type": "git",

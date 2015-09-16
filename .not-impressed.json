@@ -1,6 +1,5 @@
 {
     "Report": "Not Impressed",
-    "targets": [{".": ["."] }],
     "output": "results.json",
 	"build": {
 		"node": {

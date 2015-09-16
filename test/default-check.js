@@ -1,15 +1,14 @@
 
 module.exports = {
     setUp: function (callback) {
-        this.foo = 'bar';
+        this.defaults = require('../lib/defaults');
         callback();
     },
     tearDown: function (callback) {
-        // clean up
         callback();
     },
-    sanityCheck: function (test) {
-        test.equals(this.foo, 'bar');
+    defaultCheck: function (test) {
+        test.ok(this.defaults, "defaults module exists");
         test.done();
     }
 }
