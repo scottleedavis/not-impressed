@@ -66,6 +66,7 @@ cd <your repo>
 ni
 
 ```
+output is then generated in JSON format with the scan results in the current directory.
 
 testing
 -------
@@ -74,7 +75,6 @@ testing
 ```
 npm install -g nodeunit
 ```
-
 *running tests*
 ```
 nodeunit test/default-check.js
