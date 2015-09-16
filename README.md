@@ -17,8 +17,8 @@ optional dependencies
 * [license_finder](https://github.com/pivotal/LicenseFinder)
 
 
-installation
-------------
+setup
+-------
 
 * add a .not-impressed.json file to your repo
 ```
@@ -49,33 +49,22 @@ installation
 		}
 	}
 }
+
+installation
+--------------
+
 ```
-*git add as a submodule to your project*
-```
-git submodule add git@github.com:scottleedavis/not-impressed.git
+npm install -g not-impressed
 ```
 
 usage
 -----
 
-*from terminal (/bin/sh)*
 ```
-#from your-repo root
-source ./not-impressed/env.sh
-
-#for debug mode
-ni -d
-
-#for normal mode
+cd <your repo>
 ni
 
 ```
-
-*jenkins*
-* todo setup
-
-*travis*
-* todo setup
 
 testing
 -------
