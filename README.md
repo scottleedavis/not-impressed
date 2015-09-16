@@ -17,10 +17,17 @@ optional dependencies
 * [license_finder](https://github.com/pivotal/LicenseFinder)
 
 
-setup
--------
+installation
+------------
+[npm](https://www.npmjs.com/) must be installed beforehand.
+```
+npm install -g not-impressed
+```
 
-* add a .not-impressed.json file to your repo
+configuration
+-------------
+
+*add a .not-impressed.json file to your repo that describes how to build and scan things.*
 ```
 {
 	"Report": "Your Report Name",
@@ -49,17 +56,11 @@ setup
 		}
 	}
 }
-
-installation
---------------
-
-```
-npm install -g not-impressed
 ```
 
-usage
------
-
+running
+-------
+*on a command shell*
 ```
 cd <your repo>
 ni
@@ -76,7 +77,7 @@ npm install -g nodeunit
 
 *running tests*
 ```
-nodeunit test/sanity-check.js
+nodeunit test/default-check.js
 ```
 
 
