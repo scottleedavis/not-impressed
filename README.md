@@ -34,7 +34,7 @@ create a *.ni.json* file in your repo that describes how to build and scan thing
 ```
 {
 	"Report": "Your Report Name",
-	"output": "results.json",
+	"output": "results.json"
 }
 ```
 *example build and scan configuration*
@@ -97,5 +97,3 @@ npm install -g nodeunit
 ```
 nodeunit test/default-check.js
 ```
-
-
