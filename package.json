@@ -1,16 +1,31 @@
 {
 	"name": "not-impressed",
-	"private": true,
+	"description": "A generalized platform build scanner.",
+	"version": "0.0.1",
 	"dependencies": {
 		"jsonfile": "~2.2.1",
 		"lodash": "~3.10.1",
     		"node-internal-pubsub": "1.0.x",
     		"nodeunit": "~0.9.1"
 	},
-	"version": "0.0.1",
+	"main": "app.js",
 	"scripts": {
 		"start": "node app.js",
 		"test": "nodeunit test/sanity-check.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/scottleedavis/not-impressed.git"
+	},
+	"keywords": [
+		"build",
+		"scan",
+		"license"
+	],
+	"author": "Scott Davis <scottleedavis@gmail.com> (http://scottleedavis.com)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/scottleedavis/not-impressed/issues"
 	}
 
 }
