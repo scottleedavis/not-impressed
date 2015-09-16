@@ -28,14 +28,19 @@ npm install -g not-impressed
 configuration
 -------------
 
-*add a .not-impressed.json file to your repo that describes how to build and scan things.*
+create a *.not-impressed.json* file in your repo that describes how to build and scan things.
+
+*example minimal configuration*
 ```
 {
 	"Report": "Your Report Name",
-	"targets": [
-		{"some_folder": "*" },
-		{"some_other_folder": ["subfolder_1","subfolder_2/project"]}
-	],
+	"output": "results.json",
+}
+```
+*example build and scan configuration*
+```
+{
+	"Report": "Your Report Name",
 	"output": "results.json",
 	"build": {
 		"ruby": {
@@ -56,6 +61,19 @@ configuration
 			"command": "license_finder"
 		}
 	}
+}
+```
+
+```
+*example of multiple targets configuration*
+```
+{
+	"Report": "Your Report Name",
+	"targets": [
+		{"some_folder": "*" },
+		{"some_other_folder": ["subfolder_1","subfolder_2/project"]}
+	],
+	"output": "results.json"
 }
 ```
 
