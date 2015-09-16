@@ -1,7 +1,7 @@
 {
 	"name": "not-impressed",
 	"description": "A generalized platform build scanner.",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"preferGlobal": true,
 	"dependencies": {
 		"jsonfile": "~2.2.1",
