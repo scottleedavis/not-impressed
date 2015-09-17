@@ -6,6 +6,8 @@
 
 A generalized platform build scanner written in nodejs.
 
+Provides a simple structure for discovering, building, scanning, and parsing the various groupings of build systems with tools that analyze them.
+
 dependencies
 ------------
 
