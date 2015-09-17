@@ -76,6 +76,32 @@ create a *.ni.json* file in your repo that describes how to build and scan thing
 }
 ```
 
+
+*example of printing debug information during build or scan*
+```
+{
+	"Report": "Your Report Name",
+	"build": {
+		"maven": {
+			"pattern": "pom.xml",
+			"command": "mvn package; rm -f target; ln -s dist target"
+		},
+		"node": {
+			"pattern": "package.json",
+			"command": "npm install"
+		},
+		"debug": true
+	},
+	"scan": {
+		"license": {
+			"command": "license_finder"
+		},
+		"debug" true
+	}
+	"output": "results.json"
+}
+```
+
 running
 -------
 *on a command shell*
