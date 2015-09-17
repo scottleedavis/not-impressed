@@ -1,15 +1,17 @@
 {
-    "Report": "Not Impressed",
-    "output": "results.json",
-	"build": {
-		"node": {
-			"pattern": "package.json",
-			"command": "npm install"
-		}
-	},
-	"scan": {
-		"license": {
-			"command": "license_finder"
-		}
-	}
+  "Report": "Not Impressed",
+  "output": "results.json",
+  "build": {
+    "node": {
+      "pattern": "package.json",
+      "command": "npm install"
+    },
+    "debug": true
+  },
+  "scan": {
+    "license": {
+      "command": "license_finder"
+    },
+    "debug": true
+  }
 }
