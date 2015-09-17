@@ -110,7 +110,9 @@ cd <your repo>
 ni
 
 ```
-output is then generated in JSON format with the scan results in the current directory.
+Results are generated in JSON format, in the current directory.
+
+Here are the [results](results.json) generated when not-impressed runs against itself using it's own [.ni.json](.ni.json).
 
 testing
 -------
