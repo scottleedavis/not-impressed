@@ -2,9 +2,9 @@
   "Report": "Not Impressed",
   "output": "results.json",
   "build": {
-    "node": {
-      "pattern": "package.json",
-      "command": "npm install"
+    "ruby": {
+        "pattern": "Gemfile",
+        "command": "bundle install --path vendor/bundle"
     },
     "debug": true
   },
