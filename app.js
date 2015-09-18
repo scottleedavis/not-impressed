@@ -2,9 +2,9 @@ var jsonfile = require('jsonfile'),
     path = require('path'),
     util = require('util');
 
-var conf = jsonfile.readFileSync(path.resolve(process.env["NI_TARGET"], process.env["NI_CONF"]))
-var target = require('./lib/target')(conf);
-var repos = target.discover();
+var conf = jsonfile.readFileSync(path.resolve(process.env["NI_TARGET"], process.env["NI_CONF"])),
+    target = require('./lib/target')(conf),
+    repos = target.discover();
 
 target.build(repos, function(output) {
     target.scan(repos, function(scan) {
