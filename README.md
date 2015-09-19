@@ -11,11 +11,14 @@ Provides a simple structure for discovering, building, scanning, and parsing the
 dependencies
 ------------
 
-* [Nodejs >= 0.10.x](https://nodejs.org)
+* [Nodejs >= 0.8.x](https://nodejs.org)
 
 optional dependencies
 ---------------------
 
+Any.
+
+Some that have been used with success.
 * [apache maven 3](https://maven.apache.org/download.cgi)
 * [bundler](http://bundler.io/)
 * [license_finder](https://github.com/pivotal/LicenseFinder)

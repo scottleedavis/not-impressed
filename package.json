@@ -1,12 +1,13 @@
 {
 	"name": "not-impressed",
 	"description": "A generalized platform build scanner.",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"preferGlobal": true,
 	"dependencies": {
 		"jsonfile": "~2.2.1",
 		"lodash": "~3.10.1",
 		"node-internal-pubsub": "1.0.x",
+        "iconv": "~2.1.10",
 		"nodeunit": "~0.9.1"
 	},
 	"main": "ni",
