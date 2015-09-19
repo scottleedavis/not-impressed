@@ -122,6 +122,8 @@ Here are the [results](results.json) generated when not-impressed runs against i
 testing
 -------
 
+*undergoing a redesign*
+
 *[nodeunit](https://github.com/caolan/nodeunit) needs to be installed*
 ```
 npm install -g nodeunit
