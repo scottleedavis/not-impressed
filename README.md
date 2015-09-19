@@ -18,7 +18,7 @@ optional dependencies
 
 Any.
 
-Some that have been used with success.
+Some dependencies that have been used with success.
 * [apache maven 3](https://maven.apache.org/download.cgi)
 * [bundler](http://bundler.io/)
 * [license_finder](https://github.com/pivotal/LicenseFinder)
@@ -30,6 +30,7 @@ installation
 npm install -g not-impressed
 ```
 
+You can also leverage a webservice docker container (for play only!) at [not-impressed-docker](https://github.com/scottleedavis/not-impressed-docker)
 configuration
 -------------
 
