@@ -11,7 +11,8 @@
 	},
 	"main": "ni",
 	"scripts": {
-		"start": "ni"
+		"start": "ni",
+        "test": "./ni-self"
 	},
 	"bin": {
 		"ni": "ni"
