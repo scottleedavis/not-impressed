@@ -9,13 +9,10 @@
 		"node-internal-pubsub": "1.0.x",
         "iconv": "~2.1.10"
 	},
-    "devDependencies": {
-        "nodeunit": "~0.9.1"
-    },
+
 	"main": "ni",
 	"scripts": {
-		"start": "ni",
-		"test": "nodeunit test/default-check.js"
+		"start": "ni"
 	},
 	"bin": {
 		"ni": "ni"
