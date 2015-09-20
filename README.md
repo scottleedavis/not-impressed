@@ -124,7 +124,7 @@ cd <your repo>
 ni
 
 ```
-[Results](results.json are generated in JSON format, in the current directory based on it's own [.ni.jon](.ni.json) configuration.
+[Results](results.json) are generated in JSON format, in the current directory based on it's own [.ni.jon](.ni.json) configuration.
 
 You can also leverage a webservice docker container (for play only!) at [not-impressed-docker](https://github.com/scottleedavis/not-impressed-docker)
 
