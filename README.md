@@ -57,7 +57,7 @@ script:
  - ni
 ```
 
-[Results](results.json) are generated in JSON format, in the current directory based on it's own [.ni.json](.ni.json) configuration.
+[Results](results.json) are generated in JSON format based on [.ni.json](.ni.json) configuration.
 
 You can also leverage a webservice docker container (for play only!) at [not-impressed-docker](https://github.com/scottleedavis/not-impressed-docker)
 
