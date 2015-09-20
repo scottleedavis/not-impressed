@@ -5,6 +5,6 @@
     },
     "scan": {
         "debug": true
-    }
+    },
     "output": "results.json"
 }
