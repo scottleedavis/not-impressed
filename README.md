@@ -30,7 +30,7 @@ installation
 npm install -g not-impressed
 ```
 
-To include not-impressed in your [Travis](https://travis-ci.org/) build, add the following to .travis.yml in the before_script section.
+To include not-impressed in your [Travis](https://travis-ci.org/) build, add the following to .travis.yml.
 ```
 before_script:
   - npm install -g not-impressed
