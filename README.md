@@ -30,14 +30,6 @@ installation
 npm install -g not-impressed
 ```
 
-To include not-impressed in your [Travis](https://travis-ci.org/) build, add the following to .travis.yml.
-```
-before_script:
-  - npm install -g not-impressed
-script:
- - ni
-```
-
 configuration
 -------------
 
@@ -54,8 +46,16 @@ running
 ```
 cd <your repo>
 ni
-
 ```
+
+To include not-impressed in your [Travis](https://travis-ci.org/) build, add the following to .travis.yml.
+```
+before_script:
+  - npm install -g not-impressed
+script:
+ - ni
+```
+
 [Results](results.json) are generated in JSON format, in the current directory based on it's own [.ni.json](.ni.json) configuration.
 
 You can also leverage a webservice docker container (for play only!) at [not-impressed-docker](https://github.com/scottleedavis/not-impressed-docker)
