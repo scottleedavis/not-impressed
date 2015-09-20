@@ -30,7 +30,18 @@ installation
 npm install -g not-impressed
 ```
 
+To include not-impressed in your [Travis](https://travis-ci.org/) build, add the following to .travis.yml in the before_script section.
+```
+before_script:
+  - npm install -g not-impressed
+```
+```
+script:
+ - ni
+```
+
 You can also leverage a webservice docker container (for play only!) at [not-impressed-docker](https://github.com/scottleedavis/not-impressed-docker)
+
 configuration
 -------------
 
@@ -76,6 +87,7 @@ create a *.ni.json* file in your repo that describes how to build and scan thing
 	"Report": "Your Report Name",
 	"targets": [
 		{"some_folder": "*" },
+		{"another_folder": ""},
 		{"some_other_folder": ["subfolder_1","subfolder_2/project"]}
 	],
 	"output": "results.json"
