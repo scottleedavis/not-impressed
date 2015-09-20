@@ -34,13 +34,9 @@ To include not-impressed in your [Travis](https://travis-ci.org/) build, add the
 ```
 before_script:
   - npm install -g not-impressed
-```
-```
 script:
  - ni
 ```
-
-You can also leverage a webservice docker container (for play only!) at [not-impressed-docker](https://github.com/scottleedavis/not-impressed-docker)
 
 configuration
 -------------
@@ -128,9 +124,10 @@ cd <your repo>
 ni
 
 ```
-Results are generated in JSON format, in the current directory.
+[Results](results.json are generated in JSON format, in the current directory based on it's own [.ni.jon](.ni.json) configuration.
 
-Here are the [results](results.json) generated when not-impressed runs against itself using it's own [.ni.json](.ni.json).
+You can also leverage a webservice docker container (for play only!) at [not-impressed-docker](https://github.com/scottleedavis/not-impressed-docker)
+
 
 testing
 -------
