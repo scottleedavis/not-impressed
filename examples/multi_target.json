@@ -1,0 +1,9 @@
+{
+    "Report": "Your Report Name",
+    "targets": [
+        {"some_folder": "*" },
+        {"another_folder": ""},
+        {"some_other_folder": ["subfolder_1","subfolder_2/project"]}
+    ],
+    "output": "results.json"
+}

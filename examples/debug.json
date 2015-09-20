@@ -1,0 +1,10 @@
+{
+    "Report": "Your Report Name",
+    "build": {
+        "debug": true
+    },
+    "scan": {
+        "debug": true
+    }
+    "output": "results.json"
+}

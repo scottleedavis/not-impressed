@@ -1,0 +1,23 @@
+{
+    "Report": "Your Report Name",
+    "output": "results.json",
+    "build": {
+        "ruby": {
+            "pattern": "Gemfile",
+            "command": "bundle install --path vendor/bundle"
+        },
+        "maven": {
+            "pattern": "pom.xml",
+            "command": "mvn package; rm -f target; ln -s dist target"
+        },
+        "node": {
+            "pattern": "package.json",
+            "command": "npm install"
+        }
+    },
+    "scan": {
+        "license": {
+            "command": "license_finder"
+        }
+    }
+}

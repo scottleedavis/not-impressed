@@ -43,78 +43,10 @@ configuration
 
 create a *.ni.json* file in your repo that describes how to build and scan things.
 
-*example minimal configuration*
-```
-{
-	"Report": "Your Report Name",
-	"output": "results.json"
-}
-```
-*example build and scan configuration*
-```
-{
-	"Report": "Your Report Name",
-	"output": "results.json",
-	"build": {
-		"ruby": {
-			"pattern": "Gemfile",
-			"command": "bundle install --path vendor/bundle"
-		},
-		"maven": {
-			"pattern": "pom.xml",
-			"command": "mvn package; rm -f target; ln -s dist target"
-		},
-		"node": {
-			"pattern": "package.json",
-			"command": "npm install"
-		}
-	},
-	"scan": {
-		"license": {
-			"command": "license_finder"
-		}
-	}
-}
-```
-
-*example of multiple targets configuration*
-```
-{
-	"Report": "Your Report Name",
-	"targets": [
-		{"some_folder": "*" },
-		{"another_folder": ""},
-		{"some_other_folder": ["subfolder_1","subfolder_2/project"]}
-	],
-	"output": "results.json"
-}
-```
-
-
-*example of printing debug information during build or scan*
-```
-{
-	"Report": "Your Report Name",
-	"build": {
-		"maven": {
-			"pattern": "pom.xml",
-			"command": "mvn package; rm -f target; ln -s dist target"
-		},
-		"node": {
-			"pattern": "package.json",
-			"command": "npm install"
-		},
-		"debug": true
-	},
-	"scan": {
-		"license": {
-			"command": "license_finder"
-		},
-		"debug" true
-	}
-	"output": "results.json"
-}
-```
+* [example minimal configuration](examples/min.json)
+* [example build and scan configuration](examples/multi_build.json)
+* [example of multiple targets configuration](examples/multi_target.json)
+* [example of printing debug information during build or scan](examples/debug.json)
 
 running
 -------
@@ -124,7 +56,7 @@ cd <your repo>
 ni
 
 ```
-[Results](results.json) are generated in JSON format, in the current directory based on it's own [.ni.jon](.ni.json) configuration.
+[Results](results.json) are generated in JSON format, in the current directory based on it's own [.ni.json](.ni.json) configuration.
 
 You can also leverage a webservice docker container (for play only!) at [not-impressed-docker](https://github.com/scottleedavis/not-impressed-docker)
 
