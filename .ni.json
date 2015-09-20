@@ -2,11 +2,10 @@
   "Report": "Not Impressed",
   "output": "results.json",
   "build": {
-    "ruby": {
+    "node": {
         "pattern": "package.json",
         "command": "npm install"
-    },
-    "debug": true
+    }
   },
   "scan": {
     "license": {
