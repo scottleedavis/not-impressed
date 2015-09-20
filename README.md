@@ -41,11 +41,11 @@ create a *.ni.json* file in your repo that describes how to build and scan thing
 * [example of multiple targets configuration](examples/multi_target.json)
 * [example of printing debug information during build or scan](examples/debug.json)
 
-running
+usage
 -------
 *on a command shell*
 ```
-cd <your repo>
+cd <your repository with a .ni.json file>
 ni
 ```
 
