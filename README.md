@@ -19,7 +19,7 @@ optional dependencies
 Any.
 
 Some dependencies that have been used with success.
-* [apache maven 3](https://maven.apache.org/download.cgi), [java](https://java.com/en/download/)
+* [maven](https://maven.apache.org/download.cgi), [java](https://java.com/en/download/)
 * [bundler](http://bundler.io/), [ruby](https://www.ruby-lang.org/en/), [rubygems](https://rubygems.org/)
 * [license_finder](https://github.com/pivotal/LicenseFinder)
 
