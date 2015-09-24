@@ -49,6 +49,8 @@ cd <your repository with a .ni.json file>
 ni
 ```
 
+[Results](results.json) are generated in JSON format based on [.ni.json](.ni.json) configuration.
+
 
 To include not-impressed in your [Travis](https://travis-ci.org/) build, add the following to .travis.yml.
 ```
@@ -78,9 +80,6 @@ ni.run(conf, function(output){
 });
 
 ``` 
-
-
-[Results](results.json) are generated in JSON format based on [.ni.json](.ni.json) configuration.
 
 
 You can also leverage a webservice docker container (for play only!) at [not-impressed-docker](https://github.com/scottleedavis/not-impressed-docker)
