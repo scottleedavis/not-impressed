@@ -2,6 +2,6 @@
 
 process.env['NI_TARGET']=__dirname;
 process.env['NI_CONF']=".ni.json";
-process.env['NI_SELF']=true;
 
-require('./bin/app');
+
+require('./bin/app-child');

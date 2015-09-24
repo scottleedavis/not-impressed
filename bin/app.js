@@ -1,10 +1,10 @@
 var jsonfile = require('jsonfile'),
     path = require('path'),
-    defaults = require('./lib/defaults'),
+    defaults = require('../lib/defaults'),
     util = require('util');
 
 var conf = jsonfile.readFileSync(path.resolve(process.env["NI_TARGET"], process.env["NI_CONF"]), defaults.file_opts),
-    target = require('./lib/target')(conf),
+    target = require('../lib/target')(conf),
     repos = target.discover();
 
 target.build(repos, function(output) {
@@ -14,3 +14,4 @@ target.build(repos, function(output) {
         jsonfile.writeFileSync(path.resolve(process.env["NI_TARGET"], conf.output), parsed, defaults.file_opts);
     });
 });
+

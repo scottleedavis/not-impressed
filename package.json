@@ -9,7 +9,7 @@
 		"node-internal-pubsub": "1.0.x",
         "iconv": "~2.1.10"
 	},
-	"main": "ni",
+	"main": "ni-app",
 	"scripts": {
 		"start": "ni",
         "test": "./ni-self"

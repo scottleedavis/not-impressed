@@ -36,10 +36,10 @@ configuration
 
 create a *.ni.json* file in your repo that describes how to build and scan things.
 
-* [example minimal configuration](examples/min.json)
-* [example build and scan configuration](examples/multi_build.json)
-* [example of multiple targets configuration](examples/multi_target.json)
-* [example of printing debug information during build or scan](examples/debug.json)
+* [example minimal configuration](examples/config/min.json)
+* [example build and scan configuration](examples/config/multi_build.json)
+* [example of multiple targets configuration](examples/config/multi_target.json)
+* [example of printing debug information during build or scan](examples/config/debug.json)
 
 usage
 -------
