@@ -67,7 +67,8 @@ var conf = {
     "Report": "Your Report Name",
     "targets": [
         {"..": "" }
-    ]
+    ],
+    ...
 }
 
 ni.run(conf, function(output){

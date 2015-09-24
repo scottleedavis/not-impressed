@@ -1,0 +1,13 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "not-impressed examples",
+  "main": "non_global.js",
+  "dependencies": {
+	"not-impressed": "file:../../not-impressed"
+  },
+  "scripts": {
+  	"start": "node non_global.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
