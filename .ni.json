@@ -9,7 +9,7 @@
   },
   "scan": {
     "license": {
-      "command": "license_finder"
+      "command": "license_finder report --format csv --columns=name version licenses homepage"
     },
     "debug": true
   }
