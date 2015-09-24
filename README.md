@@ -57,7 +57,24 @@ script:
  - ni
 ```
 
-[Here is an example](examples/non_global.js) of including not-impressed in your node application directly. 
+[Example](examples/non_global.js) of including not-impressed in your node application directly.
+```
+var ni = require('not-impressed'),
+	util = require('util');
+
+
+var conf = {
+    "Report": "Your Report Name",
+    "targets": [
+        {"..": "" }
+    ]
+}
+
+ni.run(conf, function(output){
+	console.log(util.inspect(output, true, null));
+});
+
+``` 
 
 [Results](results.json) are generated in JSON format based on [.ni.json](.ni.json) configuration.
 
