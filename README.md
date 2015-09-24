@@ -85,12 +85,6 @@ ni.run(conf, function(output){
 You can also leverage a webservice docker container (for play only!) at [not-impressed-docker](https://github.com/scottleedavis/not-impressed-docker)
 
 
-parsing
--------
-
-[parsers.js](lib/parsers.js) converts raw output to json arrays automatically.  Currently license_finder is supported.  Pull requests for additional parsers are encouraged. 
-
-
 testing
 -------
 
