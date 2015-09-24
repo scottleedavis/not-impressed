@@ -49,6 +49,7 @@ cd <your repository with a .ni.json file>
 ni
 ```
 
+
 To include not-impressed in your [Travis](https://travis-ci.org/) build, add the following to .travis.yml.
 ```
 before_script:
@@ -56,6 +57,7 @@ before_script:
 script:
  - ni
 ```
+
 
 [Example](examples/non_global.js) of including not-impressed in your node application directly.
 ```
@@ -77,7 +79,9 @@ ni.run(conf, function(output){
 
 ``` 
 
+
 [Results](results.json) are generated in JSON format based on [.ni.json](.ni.json) configuration.
+
 
 You can also leverage a webservice docker container (for play only!) at [not-impressed-docker](https://github.com/scottleedavis/not-impressed-docker)
 
