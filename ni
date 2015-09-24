@@ -1,6 +1,13 @@
 #! /usr/bin/env node
 
-process.env['NI_TARGET']=process.cwd();
-process.env['NI_CONF']=".ni.json";
-
-require('./bin/app');
+if (!module.parent) {
+	process.env['NI_TARGET']=process.cwd();
+	process.env['NI_CONF']=".ni.json";
+    require('./bin/app');
+} else {
+	process.env['NI_TARGET']=process.cwd();
+    var ni = require('./bin/app-child');
+	module.exports = {
+		run: ni.run
+	}
+}

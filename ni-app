@@ -1,7 +1,0 @@
-#! /usr/bin/env node
-
-process.env['NI_TARGET']=__dirname;
-process.env['NI_CONF']=".ni.json";
-
-
-require('./bin/app-child');

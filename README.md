@@ -57,6 +57,8 @@ script:
  - ni
 ```
 
+[Here is an example](examples/non_global.js) of including not-impressed in your node application directly. 
+
 [Results](results.json) are generated in JSON format based on [.ni.json](.ni.json) configuration.
 
 You can also leverage a webservice docker container (for play only!) at [not-impressed-docker](https://github.com/scottleedavis/not-impressed-docker)

@@ -1,19 +1,15 @@
-var ni = require('..')
+var ni = require('not-impressed'),
+	util = require('util');
 
 
 var conf = {
     "Report": "Your Report Name",
-    "output": "results.json"   ,
     "targets": [
         {"..": "" }
     ]
 }
-console.log(ni.run(conf))
 
+ni.run(conf, function(output){
+	console.log(util.inspect(output, true, null));
+});
 
-
-//if (!module.parent) {
-//    console.log("I'm parent");
-//} else {
-//    console.log("I'm child");
-//}
