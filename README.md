@@ -30,6 +30,8 @@ installation
 ```
 npm install -g not-impressed
 ```
+*or as a dependency in your package.json*
+
 
 configuration
 -------------
