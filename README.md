@@ -64,7 +64,7 @@ script:
 ```
 
 
-[Example](examples/non_global.js) of including not-impressed in your node application directly.
+[Here is an example](examples/non_global.js) of including not-impressed in your node application directly.
 ```
 var ni = require('not-impressed'),
 	util = require('util');
