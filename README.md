@@ -43,6 +43,7 @@ create a *.ni.json* file in your repo that describes how to build and scan thing
 * [example of multiple targets configuration](examples/config/multi_target.json)
 * [example of printing debug information during build or scan](examples/config/debug.json)
 * [example of running a scan only](examples/config/scan_only.json)
+
 usage
 -------
 *on a command shell*
