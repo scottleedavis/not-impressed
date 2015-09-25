@@ -1,0 +1,10 @@
+{
+  "Report": "Not Impressed",
+  "output": "results.json",
+  "build": false,
+  "scan": {
+    "license": {
+      "command": "license_finder"
+    }
+  }
+}
