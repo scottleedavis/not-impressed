@@ -7,3 +7,7 @@ node_js:
   - "0.8"
 before_script:
   - gem install license_finder
+  - npm install -g mocha
+script:
+  - ni
+  - mocha test

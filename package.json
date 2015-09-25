@@ -8,11 +8,14 @@
 		"node-internal-pubsub": "1.0.x",
         "iconv": "~2.1.10"
 	},
-	"main": "ni",
+	"devDependencies": {
+		"mocha": "latest"
+	},
 	"scripts": {
 		"start": "ni",
         "test": "./ni-self"
 	},
+	"main": "ni",
 	"bin": {
 		"ni": "ni"
 	},
