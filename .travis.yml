@@ -9,5 +9,5 @@ before_script:
   - gem install license_finder
   - npm install -g mocha
 script:
-  - ni
+  - ./ni-self
   - mocha test
