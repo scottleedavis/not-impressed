@@ -8,6 +8,7 @@ var assert = require('assert'),
 //     target
 //     seperator
 //     file_opts
+//     dir
 
 describe('Sane defaults', function(){
   it('contain a defaults module', function(){
@@ -30,5 +31,11 @@ describe('Sane defaults', function(){
   });
   it('contains file_opts', function(){
     assert(typeof defaults.file_opts != "undefined");
+  });
+  it('contains dir', function(){
+    assert(typeof defaults.dir != "undefined");
+  });
+  it('contains channel', function(){
+    assert(typeof defaults.channel != "undefined");
   });
 })
