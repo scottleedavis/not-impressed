@@ -1,0 +1,10 @@
+{
+  "Report": "Your already built Project",
+  "output": "results.json",
+  "build": false,
+  "scan": {
+    "license": {
+      "command": "license_finder report --format csv --columns=name version homepage licenses"
+    }
+  }
+}

@@ -43,6 +43,7 @@ create a *.ni.json* file in your repo that describes how to build and scan thing
 * [example of running a scan only](examples/config/scan_only.json)
 * [example of multiple targets](examples/config/multi_target.json)
 * [example of printing debug information](examples/config/debug.json)
+* [example of running license_finder](examples/config/license_finder.json)
 
 usage
 -------
