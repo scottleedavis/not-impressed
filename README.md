@@ -91,15 +91,14 @@ You can also leverage a webservice docker container (for play only!) at [not-imp
 testing
 -------
 
-*undergoing a redesign*
 
-*[nodeunit](https://github.com/caolan/nodeunit) needs to be installed*
+*[Mochajs](https://mochajs.org/) needs to be installed*
 ```
-npm install -g nodeunit
+npm install -g mocha
 ```
 *running tests*
 ```
-nodeunit test/default-check.js
+mocha test
 ```
 
 
