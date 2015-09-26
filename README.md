@@ -36,17 +36,42 @@ npm install -g not-impressed
 configuration
 -------------
 
-create a *.ni.json* file in your repo that describes how to build and scan things.
+Create a configuration object that describes how to build and/or scan things.
 
-* [example minimal configuration](examples/config/min.json)
-* [example build and scan](examples/config/multi_build.json)
-* [example of running a scan only](examples/config/scan_only.json)
-* [example of multiple targets](examples/config/multi_target.json)
-* [example of printing debug information](examples/config/debug.json)
-* [example of running license_finder](examples/config/license_finder.json)
+When using a globally installed ni, this takes the form of a a *.ni.json* file in root path of your project.  (see examples for more useful configurations)
+
+```
+{
+    "Report": "Your Report Name",
+    "output": "results.json"
+}
+
+```
+
+When requiring this module in your own project, specify at least one target.
+
+```
+{
+    "Report": "Your Report Name",
+    "targets": [
+        {"/some/interesting/build": "" }
+    ]
+}
+
+```
+
+configuration examples 
+----------------------
+
+* [build and scan](examples/config/multi_build.json)
+* [running a scan only](examples/config/scan_only.json)
+* [multiple targets](examples/config/multi_target.json)
+* [displaying debug information](examples/config/debug.json)
+* [running license_finder](examples/config/license_finder.json)
+
 
 usage
--------
+-----
 *on a command shell*
 ```
 cd <your repository with a .ni.json file>
