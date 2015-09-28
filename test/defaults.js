@@ -20,12 +20,6 @@ describe('Sane defaults', function(){
   it('contains parse', function(){
     assert(typeof defaults.parse != "undefined");
   });
-  it('contains build', function(){
-    assert(typeof defaults.build != "undefined");
-  });
-  it('contains scan', function(){
-    assert(typeof defaults.scan != "undefined");
-  });
   it('contains target', function(){
     assert(typeof defaults.target != "undefined");
   });
