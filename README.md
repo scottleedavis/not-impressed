@@ -4,7 +4,7 @@
 [![npm version](https://badge.fury.io/js/not-impressed.svg)](http://badge.fury.io/js/not-impressed)
 [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://www.npmjs.com/package/not-impressed)
 
-A generalized platform build scanner written in nodejs.
+A generalized multi-staged build scanner written in nodejs.
 
 Provides a simple structure for discovering, building, scanning, and parsing the various groupings of build systems with tools that analyze them.
 
