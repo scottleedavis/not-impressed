@@ -7,11 +7,8 @@ var conf = jsonfile.readFileSync(path.resolve(process.env["NI_TARGET"], process.
     target = require('../lib/target')(conf),
     repos = target.discover();
 
-target.build(repos, function(output) {
-    target.scan(repos, function(scan) {
-        var parsed = target.parse(scan);
-        console.log(util.inspect(parsed, true, null));
-        jsonfile.writeFileSync(path.resolve(process.env["NI_TARGET"], conf.output), parsed, defaults.file_opts);
-    });
+target.run(repos, function(output) {
+    var parsed = target.parse(output);
+    console.log(util.inspect(parsed, true, null));
+    jsonfile.writeFileSync(path.resolve(process.env["NI_TARGET"], conf.output), parsed, defaults.file_opts); 
 });
-

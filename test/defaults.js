@@ -14,6 +14,9 @@ describe('Sane defaults', function(){
   it('contain a defaults module', function(){
     assert(typeof defaults != "undefined");
   });
+  it('contains config', function(){
+    assert(typeof defaults.config != "undefined");
+  });
   it('contains parse', function(){
     assert(typeof defaults.parse != "undefined");
   });

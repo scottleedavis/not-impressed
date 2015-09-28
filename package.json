@@ -1,7 +1,7 @@
 {
 	"name": "not-impressed",
 	"description": "A generalized platform build scanner.",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"dependencies": {
 		"jsonfile": "~2.2.1",
 		"lodash": "~3.10.1",

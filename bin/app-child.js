@@ -7,12 +7,11 @@ function fun(conf, callback) {
     var target = require('../lib/target')(conf),
         repos = target.discover();
 
-    target.build(repos, function(output) {
-        target.scan(repos, function(scan) {
-            var parsed = target.parse(scan);
-            callback(parsed);
-        });
+    target.run(repos, function(output) {
+        var parsed = target.parse(output);
+        callback(parsed);
     });
+
 }
 
 module.exports = {
