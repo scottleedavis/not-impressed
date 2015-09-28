@@ -10,7 +10,6 @@
   "scan": {
     "license": {
       "command": "license_finder report --format csv --columns=name version homepage licenses"
-    },
-    "debug": false
+    }
   }
 }
