@@ -65,6 +65,7 @@ configuration examples
 
 * [build and scan](examples/config/multi_build.json)
 * [running a scan only](examples/config/scan_only.json)
+* [arbitrary phases](examples/config/multi_phase.json)
 * [multiple targets](examples/config/multi_target.json)
 * [displaying debug information](examples/config/debug.json)
 * [running license_finder](examples/config/license_finder.json)
