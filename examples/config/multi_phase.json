@@ -1,0 +1,23 @@
+{
+  "Report": "Multi Phase example",
+  "output": "results.json",
+  "the first thing": {
+    "run_something": {
+        "pattern": "some_file_in_path",
+        "command": "command_run_when_file_present"
+    }
+  },
+  "the next thing": {
+    "run_something_else": {
+        "command": "command_run_for_every_target"
+    }
+  },
+  "the last thing": {
+    "scan_with_tool_1": {
+      "command": "scan_tool_1"
+    },
+     "scan_with_tool_2": {
+      "command": "scan_tool_2"
+    },   
+  },
+}
