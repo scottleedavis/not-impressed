@@ -1,21 +1,21 @@
 {
 	"name": "not-impressed",
-	"description": "A generalized platform build scanner.",
+	"description": "A generalized multi-stage build scanner .",
 	"version": "0.1.6",
 	"dependencies": {
 		"jsonfile": "~2.2.1",
 		"lodash": "~3.10.1",
 		"node-internal-pubsub": "1.0.x",
-        "iconv": "~2.1.10"
+        	"iconv": "~2.1.10"
 	},
 	"devDependencies": {
 		"mocha": "latest"
 	},
+	"main": "ni",
 	"scripts": {
 		"start": "ni",
-        "test": "./ni-self"
+        	"test": "./ni-self"
 	},
-	"main": "ni",
 	"bin": {
 		"ni": "ni"
 	},
