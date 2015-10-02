@@ -10,7 +10,8 @@
   "the next thing": {
     "run_something_else": {
         "command": "command_run_for_every_target"
-    }
+    },
+    "debug": true
   },
   "the last thing": {
     "scan_with_tool_1": {
