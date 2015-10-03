@@ -9,7 +9,7 @@
     "iconv": "~2.1.10"
   },
   "devDependencies": {
-    "istanbul": "^0.3.21",
+    "istanbul": "latest",
     "mocha": "latest"
   },
   "main": "ni",
