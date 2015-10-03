@@ -10,7 +10,7 @@ var assert = require('assert'),
 //     file_opts
 //     dir
 
-describe('Sane defaults', function(){
+describe('defaults', function(){
   it('contain a defaults module', function(){
     assert(typeof defaults != "undefined");
   });

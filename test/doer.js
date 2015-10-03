@@ -4,10 +4,11 @@ var assert = require('assert'),
 
 // doer exports
 //     setConf
+//     actionCount
 //     run
 
 
-describe('Sane doer', function(){
+describe('doer', function(){
   it('contain a defaults module', function(){
     assert(typeof doer != "undefined");
   });
@@ -16,6 +17,12 @@ describe('Sane doer', function(){
   });
   it('contains run', function(){
     assert(typeof doer.run != "undefined");
+  });
+  it('has a sane actionCount', function(){
+    assert(typeof doer.actionCount != "undefined");
+  });
+  it('has a default actionCount', function(){
+    assert(doer.actionCount() === 0);  
   });
   it('runs', function(done){
     var steps = {
@@ -48,7 +55,6 @@ describe('Sane doer', function(){
     var target = ".";
 
     doer.setConf(steps);
-
 
     var ps = pubsub.createSubscriber();
     var ctr = 0;

@@ -6,8 +6,8 @@ var assert = require('assert'),
 // //     build_cmd
 // //     cmd
 
-describe('Empty Payload', function(){
-  it('exports cmd', function(){
+describe('payload', function(){
+  it('has cmd', function(){
     assert(typeof payload.cmd != "undefined");
   });
 
