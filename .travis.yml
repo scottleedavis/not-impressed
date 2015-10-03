@@ -8,7 +8,7 @@ node_js:
 before_script:
   - gem install license_finder
   - npm install -g mocha
-  - npm install --save-dev istanbul
+  - npm install istanbul
   - npm install coveralls 
 script:
   - mocha test
