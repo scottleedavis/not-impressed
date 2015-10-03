@@ -8,6 +8,8 @@ node_js:
 before_script:
   - gem install license_finder
   - npm install -g mocha
+  - npm install --save-dev istanbul
 script:
   - mocha test
   - ./ni-self
+  - npm run coverage

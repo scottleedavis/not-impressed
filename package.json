@@ -1,37 +1,38 @@
 {
-	"name": "not-impressed",
-	"description": "A generalized multi-stage build scanner .",
-	"version": "0.1.7",
-	"dependencies": {
-		"jsonfile": "~2.2.1",
-		"lodash": "~3.10.1",
-		"node-internal-pubsub": "1.0.x",
-        	"iconv": "~2.1.10"
-	},
-	"devDependencies": {
-		"mocha": "latest"
-	},
-	"main": "ni",
-	"scripts": {
-		"start": "ni",
-        	"test": "./ni-self"
-	},
-	"bin": {
-		"ni": "ni"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/scottleedavis/not-impressed.git"
-	},
-	"keywords": [
-		"build",
-		"scan",
-		"license"
-	],
-	"author": "Scott Davis <me@scottleedavis.com> (http://scottleedavis.com)",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/scottleedavis/not-impressed/issues"
-	}
-
+  "name": "not-impressed",
+  "description": "A generalized multi-stage build scanner .",
+  "version": "0.1.7",
+  "dependencies": {
+    "jsonfile": "~2.2.1",
+    "lodash": "~3.10.1",
+    "node-internal-pubsub": "1.0.x",
+    "iconv": "~2.1.10"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.21",
+    "mocha": "latest"
+  },
+  "main": "ni",
+  "scripts": {
+    "start": "ni",
+    "test": "./ni-self",
+    "coverage": "istanbul cover _mocha -- -R spec"
+  },
+  "bin": {
+    "ni": "ni"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scottleedavis/not-impressed.git"
+  },
+  "keywords": [
+    "build",
+    "scan",
+    "license"
+  ],
+  "author": "Scott Davis <me@scottleedavis.com> (http://scottleedavis.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottleedavis/not-impressed/issues"
+  }
 }
