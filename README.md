@@ -1,6 +1,7 @@
 ![Not Impressed](not-impressed.png)
 
 [![Build Status](https://travis-ci.org/scottleedavis/not-impressed.svg)](https://travis-ci.org/scottleedavis/not-impressed)
+[![Coverage Status](https://coveralls.io/repos/scottleedavis/not-impressed/badge.svg?branch=master&service=github)](https://coveralls.io/github/scottleedavis/not-impressed?branch=master)
 [![npm version](https://badge.fury.io/js/not-impressed.svg)](http://badge.fury.io/js/not-impressed)
 [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://www.npmjs.com/package/not-impressed)
 
