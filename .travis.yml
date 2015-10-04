@@ -11,7 +11,9 @@ before_script:
   - npm install istanbul
   - npm install coveralls 
 script:
-  - mocha test
   - ./ni-self
-  - npm run coverage
-after_script: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  - mocha test
+  - istanbul cover _mocha -- -R spec
+after_script: 
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+

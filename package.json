@@ -8,15 +8,10 @@
     "node-internal-pubsub": "1.0.x",
     "iconv": "~2.1.10"
   },
-  "devDependencies": {
-    "istanbul": "latest",
-    "mocha": "latest"
-  },
   "main": "ni",
   "scripts": {
     "start": "ni",
-    "test": "./ni-self",
-    "coverage": "istanbul cover _mocha -- -R spec"
+    "test": "./ni-self"
   },
   "bin": {
     "ni": "ni"
@@ -27,8 +22,7 @@
   },
   "keywords": [
     "build",
-    "scan",
-    "license"
+    "scan"
   ],
   "author": "Scott Davis <me@scottleedavis.com> (http://scottleedavis.com)",
   "license": "MIT",
