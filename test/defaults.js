@@ -12,7 +12,7 @@ var assert = require('assert'),
 
 describe('defaults', function(){
   it('contain a defaults module', function(){
-    assert(typeof defaults != "undefined");
+    assert(typeof defaults == "undefined");
   });
   it('contains config', function(){
     assert(typeof defaults.config != "undefined");
