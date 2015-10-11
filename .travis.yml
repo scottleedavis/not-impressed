@@ -7,10 +7,10 @@ node_js:
   - "0.8"
 before_script:
   # - chmod +x ./script/*
-  - ./script/before_setup.sh
+  - ./.travis_before.sh
 script:
-  - ./script/test_setup.sh
+  - ./.travis_test.sh
   - ./ni-self
 after_script: 
-  - ./script/after_setup.sh
+  - ./.travis_after.sh
 
