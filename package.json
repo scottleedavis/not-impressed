@@ -14,9 +14,7 @@
   },
   "main": "ni",
   "scripts": {
-    "start": "ni",
-    "test": "./ni-self",
-    "coverage": "istanbul cover _mocha -- -R spec"
+    "start": "ni"
   },
   "bin": {
     "ni": "ni"
