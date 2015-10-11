@@ -4,5 +4,10 @@ a=$(node --version)
 
 if [ "$a" == "v0.12.7" ]
 then
-	istanbul cover _mocha -- -R spec
+	istanbul cover _mocha -- -R spec;
+
+	echo "reporting coverage.."
+	cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+	echo "done."
+
 fi
