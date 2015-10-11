@@ -1,7 +1,5 @@
  #!/bin/sh
 
-./ni-self
-
 
 a=$(node --version)
 
