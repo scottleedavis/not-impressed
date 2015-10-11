@@ -6,9 +6,11 @@ node_js:
   - "0.9"
   - "0.8"
 before_script:
-  # - chmod +x ./script/*
+  - gem install license_finder
+  - npm install -g mocha
   - ./.travis_before.sh
 script:
+  - mocha test
   - ./.travis_test.sh
   - ./ni-self
 after_script: 
