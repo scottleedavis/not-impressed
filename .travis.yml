@@ -8,6 +8,7 @@ node_js:
 before_script:
   - gem install license_finder
   - npm install -g mocha
+  - npm install -g
   - ./.travis_before.sh
 script:
   - mocha test
