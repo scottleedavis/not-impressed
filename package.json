@@ -8,10 +8,6 @@
     "node-internal-pubsub": "1.0.x",
     "iconv": "~2.1.10"
   },
-  "devDependencies": {
-	"istanbul": "latest",
-	"mocha": "latest"
-  },
   "main": "ni",
   "scripts": {
     "start": "ni"
