@@ -10,23 +10,17 @@ describe('app-child', function(){
   });
   it('runs', function(done){
     this.timeout(10000);
+    process.env["NI_TARGET"] = ".."
     var conf = {
-        "Report": "Your Report Name",
+        "Report": "",
         "targets": [
-            {"..": "" }
+            {"": "" }
         ],
-        "build": {
-            "node": {
-                "pattern": "package.json",
-                "command": "npm install"
-            },
-            "debug": false
-        },
-        "scan": {
-            "license": {
-                "command": "license_finder"
-            },
-            "debug": false
+        "dummy": {
+            "test": {
+                "pattern": "<not-found>",
+                "command": ""
+            }
         }
     };
     
