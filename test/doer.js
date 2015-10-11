@@ -25,6 +25,7 @@ describe('doer', function(){
     assert(doer.actionCount() >= 0);  
   });
   it('runs', function(done){
+    this.timeout(8000);
     var steps = {
       phase1: {
         "do_it": {
@@ -59,17 +60,18 @@ describe('doer', function(){
     var ps = pubsub.createSubscriber();
     var ctr = 0;
     var channel = "not-impressed";
-    console.log(doer.actionCount());
+
     var message_count = doer.actionCount();
     ps.subscribe(channel);
     ps.on('message', function(channel, message) {
         switch (channel) {
             case channel:
                 ctr++;
-                console.log(ctr);
-                if (ctr >= message_count) {
+                if (ctr == message_count) {
                   assert(typeof message != "undefined");
                   done();
+                } else if (ctr > message_count) {
+                  ps.unsubscribe(channel);
                 }
                 break;
         }

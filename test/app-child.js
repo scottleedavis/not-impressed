@@ -9,6 +9,7 @@ describe('app-child', function(){
     assert(typeof app_child.run != "undefined");
   });
   it('runs', function(done){
+    this.timeout(10000);
     var conf = {
         "Report": "Your Report Name",
         "targets": [
