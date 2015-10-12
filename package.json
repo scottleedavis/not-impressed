@@ -1,11 +1,13 @@
 {
   "name": "not-impressed",
   "description": "A generalized multi-stage build scanner .",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "dependencies": {
     "jsonfile": "~2.2.1",
     "lodash": "~3.10.1",
-    "node-internal-pubsub": "1.0.x",
+    "node-internal-pubsub": "1.0.x"
+  },
+  "optionalDependencies": {
     "iconv": "~2.1.10"
   },
   "main": "ni",
