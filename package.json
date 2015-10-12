@@ -1,7 +1,7 @@
 {
   "name": "not-impressed",
   "description": "A generalized multi-stage build scanner .",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "dependencies": {
     "jsonfile": "~2.2.1",
     "lodash": "~3.10.1",
