@@ -4,7 +4,7 @@ a=$(node --version)
 
 if [ "$a" == "v0.12.7" ]
 then
-	npm install instanbul ;
+	npm install istanbul ;
 	npm install coveralls ; 
 	istanbul cover _mocha -- -R spec;
 	echo "reporting coverage..";
