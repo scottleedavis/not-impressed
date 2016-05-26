@@ -1,6 +1,6 @@
 var assert = require('assert'),
-    pubsub = require('node-internal-pubsub'),
-    doer = require('../lib/doer');
+  pubsub = require('node-internal-pubsub'),
+  doer = require('../lib/doer');
 
 // doer exports
 //     setConf
@@ -8,33 +8,33 @@ var assert = require('assert'),
 //     run
 
 
-describe('doer', function(){
-  it('contain a defaults module', function(){
+describe('doer', function() {
+  it('contain a defaults module', function() {
     assert(typeof doer != "undefined");
   });
-  it('contains setConf', function(){
+  it('contains setConf', function() {
     assert(typeof doer.setConf != "undefined");
   });
-  it('contains run', function(){
+  it('contains run', function() {
     assert(typeof doer.run != "undefined");
   });
-  it('has a sane actionCount', function(){
+  it('has a sane actionCount', function() {
     assert(typeof doer.actionCount != "undefined");
   });
-  it('has a default actionCount', function(){
-    assert(doer.actionCount() >= 0);  
+  it('has a default actionCount', function() {
+    assert(doer.actionCount() >= 0);
   });
-  it('runs', function(done){
+  it('runs', function(done) {
     this.timeout(8000);
     var steps = {
       phase1: {
         "do_it": {
-            "pattern": "README.md",
-            "command": "echo 'foo'"
+          "pattern": "README.md",
+          "command": "echo 'foo'"
         },
         "other": {
-            "pattern": "package.json",
-            "command": "echo $PATH"
+          "pattern": "package.json",
+          "command": "echo $PATH"
         },
         "default": {
           "command": "cd"
@@ -43,15 +43,15 @@ describe('doer', function(){
       },
       phase2: {
         "reduce": {
-            "command": "pwd"
+          "command": "pwd"
         },
         debug: false
       },
       "Report": "Test",
       "output": "test.json",
-      "targets": [
-        {".": ""}
-      ]
+      "targets": [{
+        ".": ""
+      }]
     };
     var target = ".";
 
@@ -64,20 +64,20 @@ describe('doer', function(){
     var message_count = doer.actionCount();
     ps.subscribe(channel);
     ps.on('message', function(channel, message) {
-        switch (channel) {
-            case channel:
-                ctr++;
-                if (ctr == message_count) {
-                  assert(typeof message != "undefined");
-                  done();
-                } else if (ctr > message_count) {
-                  ps.unsubscribe(channel);
-                }
-                break;
-        }
+      switch (channel) {
+        case channel:
+          ctr++;
+          if (ctr == message_count) {
+            assert(typeof message != "undefined");
+            done();
+          } else if (ctr > message_count) {
+            ps.unsubscribe(channel);
+          }
+          break;
+      }
     });
 
     doer.run(target);
 
-  }); 
+  });
 })
