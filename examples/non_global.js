@@ -1,28 +1,27 @@
 var ni = require('not-impressed'),
-	util = require('util');
+  util = require('util');
 
 
 var conf = {
-    "Report": "Your Report Name",
-    "targets": [
-        {"..": "" }
-    ],
-    "build": {
-        "node": {
-            "pattern": "package.json",
-            "command": "npm install"
-        },
-        "debug": false
+  "Report": "Your Report Name",
+  "targets": [{
+    "..": ""
+  }],
+  "build": {
+    "node": {
+      "pattern": "package.json",
+      "command": "npm install"
     },
-    "scan": {
-        "license": {
-            "command": "license_finder"
-        },
-        "debug": false
-    }
+    "debug": false
+  },
+  "scan": {
+    "license": {
+      "command": "license_finder"
+    },
+    "debug": false
+  }
 }
 
-ni.run(conf, function(output){
-	console.log(util.inspect(output, true, null));
+ni.run(conf, function(output) {
+  console.log(util.inspect(output, true, null));
 });
-
